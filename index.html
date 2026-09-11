@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudo Biblico</title>
+    <title>Firmados</title>
     <link rel="stylesheet" href="estilos/style.css">
     <script src="https://kit.fontawesome.com/95b5a226b6.js" crossorigin="anonymous"></script>
 </head>
@@ -14,10 +14,23 @@
                 <img src="img/logo.png" alt="" width="80">
             </div>
             <div id="menu">
-                <button>
-                    <span>Login</span>
-                </button>
-                <i id="icone1" class="fa-solid fa-bars"></i>
+                <a href="login.html">
+                    <button type="submit">
+                        <span>Login</span>
+                    </button>
+                </a>
+                <i onclick="clicar()" id="icone1" class="fa-solid fa-bars"></i>
+                <div id="nav">
+                    <ul>
+                        <i onclick="voltar()" class="fa-solid fa-xmark" id="i1"></i>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Bíblia</a></li>
+                        <li><a href="#">Estudos</a></li>
+                        <li><a href="#">Cronologia</a></li>
+                        <li><a href="#">História da Igreja</a></li>
+                        <li><a href="#">Personagens</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -66,19 +79,25 @@
 
                 <p>Confira os estudos mais acessados, séries especiais e conteúdos recomendados para fortalecer sua caminhada espiritual agora mesmo.</p>
 
-                <div class="item1" id="rocha">
-                    <h3>Série do Mês | Firmados na Rocha</h3>
-                    <p class="p2">Como manter a fé inabalável em meio ao caos da faculdade, do trabalho e das redes sociais.</p>
-                </div>
+                <a href="#" class="a">
+                    <div class="item1" id="rocha">
+                        <h3>Série do Mês | Firmados na Rocha</h3>
+                        <p class="p2">Como manter a fé inabalável em meio ao caos da faculdade, do trabalho e das redes sociais.</p>
+                    </div>
+                </a>
 
-                <div class="item1" id="inicio">
-                    <h3>Para Iniciantes | Por onde começar a ler a Bíblia?</h3>
-                    <p class="p2">Um mapa simples e direto para você abrir as Escrituras hoje e entender o que está lendo.</p>
-                </div>
-                <div class="item1" id="estudo">
-                    <h3>Estudo em Destaque | Gênesis 1</h3>
-                    <p class="p2">Do caos à criação — descubra como Deus coloca ordem onde tudo parece confuso.</p>
-                </div>
+                <a href="#" class="a">
+                    <div class="item1" id="inicio">
+                        <h3>Para Iniciantes | Por onde começar a ler a Bíblia?</h3>
+                        <p class="p2">Um mapa simples e direto para você abrir as Escrituras hoje e entender o que está lendo.</p>
+                    </div>
+                </a>
+                <a href="#" class="a">
+                    <div class="item1" id="estudo">
+                        <h3>Estudo em Destaque | Gênesis 1</h3>
+                        <p class="p2">Do caos à criação — descubra como Deus coloca ordem onde tudo parece confuso.</p>
+                    </div>
+                </a>
             </section>
             <hr>
             <section id="cronologia">
@@ -88,21 +107,50 @@
 
                 <p>Conectar os pontos da História Sagrada nunca foi tão simples. Siga a nossa cronologia interativa para entender o plano perfeito de Deus ao longo do tempo.</p>
 
-                <div>
-                    <h3>A Criação & A Queda</h3>
-                    <p>As origens da humanidade, o propósito inicial e a necessidade de resgate.</p>
-                    <h3>A Promessa & As Nações</h3>
-                    <p>A jornada dos patriarcas, o povo de Israel e os ensinamentos dos Profetas.</p>
-                    <h3>A Virada | O Evangelho</h3>
-                    <p>A chegada de Jesus, sua vida, morte, ressurreição e a mensagem do Reino.</p>
-                    <h3>A Igreja & O Futuro</h3>
-                    <p>O nascimento do movimento cristão em Atos, o crescimento da fé e as promessas eternas.</p>
-                </div>
+                <a href="#" class="a">
+                    <div class="item2">
+                        <h3> 📜 A Criação & A Queda</h3>
+                        <p>As origens da humanidade, o propósito inicial e a necessidade de resgate.</p>
+                    </div>
+                </a>
+                <a href="#" class="a">
+                    <div class="item2">
+                        <h3> 👑 A Promessa & As Nações</h3>
+                        <p>A jornada dos patriarcas, o povo de Israel e os ensinamentos dos Profetas.</p>
+                    </div>
+                </a>
+                <a href="#" class="a">
+                    <div class="item2">
+                        <h3> ✝️ A Virada | O Evangelho</h3>
+                        <p>A chegada de Jesus, sua vida, morte, ressurreição e a mensagem do Reino.</p>
+                    </div>
+                </a>
+                <a href="#" class="a">
+                    <div class="item2">
+                        <h3> 🔥 A Igreja & O Futuro</h3>
+                        <p>O nascimento do movimento cristão em Atos, o crescimento da fé e as promessas eternas.</p>
+                    </div>
+                </a>
+            
             </section>
         </main>
         <footer>
             <p>Todos os direitos reservados &copy;</p>
         </footer>
     </div>
+    <script>
+        function clicar() {
+            if (nav.style.display == 'block'){
+                nav.style.display = 'none'
+            } else {
+                nav.style.display = 'block'
+            }
+        }
+
+        function voltar() {
+            nav.style.display = 'none'
+        }
+            
+    </script>
 </body>
 </html>
