@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/cadastro.css">
+</head>
+<body>
+    <div id="container">
+        <img src="img/logo.png" alt="" width="80">
+        <div id="cadastro">   
+            <h2>Faça o seu cadastro</h2>
+            <form action="login1.html" method="get">
+                <label for="inome">Usuário</label>
+                <input type="text" name="nome" id="inome" required maxlength="30">
+
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required>
+
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required maxlength="16" minlength="8">
+
+                <label for="itermos">Aceite os termos de uso</label>
+                <input type="checkbox" name="termos" id="itermos" required>
+                <a href="#">Termos de Uso</a>
+
+                <input id="b1" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
