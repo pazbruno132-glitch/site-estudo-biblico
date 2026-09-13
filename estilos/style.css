@@ -110,7 +110,7 @@ header button{
 
 
 main{
-    width: 95vw;
+    width: 97vw;
     margin: auto;
 }
 
@@ -123,6 +123,17 @@ main{
 
 #principal h1{
     margin-bottom: 20px;
+}
+
+#principal h2{
+    margin-bottom: 20px;
+}
+
+#principal li{
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4em;
 }
 
 #principal p{
@@ -189,6 +200,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding-bottom: 50px;
 }
 
 #destaques h2{
@@ -247,41 +259,6 @@ main{
 .a{
     color: white;
 }
-
-#cronologia{
-    background-color: var(--cor2);
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-#cronologia p{
-    font-family: var(--fonte2);
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-#cronologia h2{
-    font-size: 1.8em;
-    font-family: var(--fonte1);
-}
-
-.item2{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 30px;
-    background-color: var(--cor1);
-    padding: 20px;
-    border-radius: 10px;
-}
-
 
 
 footer{
